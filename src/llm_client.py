@@ -28,3 +28,20 @@ def get_client() -> Groq:
             "free API key from https://console.groq.com/keys"
         )
     return Groq(api_key=api_key)
+
+
+def extract_json(text: str) -> dict:
+    """
+    Best-effort extraction of a JSON object from an LLM response.
+    """
+    text = text.strip()
+    text = re.sub(r"^```(json)?", "", text).strip()
+    text = re.sub(r"```$", "", text).strip()
+
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", text, re.DOTALL)
+        if match:
+            return json.loads(match.group(0))
+        raise ValueError(f"Could not parse JSON from model response:\n{text}")
