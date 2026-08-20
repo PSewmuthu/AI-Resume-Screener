@@ -56,7 +56,7 @@ with st.sidebar:
     st.divider()
     st.markdown(
         "Need a free API key? Get one at "
-        "[console.groq.com/keys](https://console.groq.com/keys) — "
+        "[console.groq.com/keys](https://console.groq.com/keys) - "
         "no credit card required."
     )
 
@@ -144,7 +144,7 @@ if "results" in st.session_state:
         for r in results
     ]
     df = pd.DataFrame(summary_rows)
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.dataframe(df, width='stretch', hide_index=True)
 
     st.download_button(
         "⬇️ Download full results as JSON",
