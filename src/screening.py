@@ -51,3 +51,36 @@ CANDIDATE RESUME ({candidate_name}):
     result = call_llm(SYSTEM_PROMPT, user_prompt, model=model)
     result["candidate_name"] = candidate_name
     return result
+
+
+def screen_multiple(jd_text: str, resumes: dict, model: str = None) -> list:
+    """
+    Screen multiple resumes and return results sorted by fit_score (desc).
+
+    Parameters
+    ----------
+    jd_text : str
+        The job description text to screen against.
+    resumes : dict
+        Mapping of candidate_name -> resume_text
+    model : str, optional
+        The model to use for the LLM call.
+    """
+    results = []
+    for name, text in resumes.items():
+        try:
+            results.append(screen_resume(jd_text, text, name, model=model))
+        except Exception as e:
+            results.append({
+                "candidate_name": name,
+                "fit_score": None,
+                "verdict": "Error",
+                "summary": f"Could not screen this resume: {str(e)}",
+                "matching_skills": [],
+                "gaps": [],
+                "interview_questions": []
+            })
+
+    results.sort(key=lambda r: (
+        r["fit_score"] is None, -(r["fit_score"] or 0)))
+    return results
