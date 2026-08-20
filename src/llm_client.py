@@ -45,3 +45,26 @@ def extract_json(text: str) -> dict:
         if match:
             return json.loads(match.group(0))
         raise ValueError(f"Could not parse JSON from model response:\n{text}")
+
+
+def call_llm(system_prompt: str, user_prompt: str, model: str = None) -> dict:
+    """
+    Call the LLM and parse its response as JSON.
+
+    The system prompt should instruct the model to respond with
+    ONLY a JSON object (no extra commentary).
+    """
+    client = get_client()
+    model = model or DEFAULT_MODEL
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ],
+        temperature=0.3
+    )
+
+    raw_text = response.choices[0].message.content
+    return extract_json(raw_text)
