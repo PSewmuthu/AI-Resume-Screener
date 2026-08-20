@@ -31,3 +31,23 @@ Guidelines:
   in this resume, not generic questions.
 - Be concise and specific. Do not invent information not present in the resume.
 """
+
+
+def screen_resume(jd_text: str, resume_text: str, candidate_name: str, model: str = None) -> dict:
+    """
+    Screen a single resume against a job description using the LLM.
+
+    Returns a dict with fit_score, verdict, summary, matching_skills,
+    gaps, and interview_questions - plus the candidate_name for display.
+    """
+
+    user_prompt = f"""JOB DESCRIPTION:
+{jd_text}
+
+CANDIDATE RESUME ({candidate_name}):
+{resume_text}
+    """
+
+    result = call_llm(SYSTEM_PROMPT, user_prompt, model=model)
+    result["candidate_name"] = candidate_name
+    return result
