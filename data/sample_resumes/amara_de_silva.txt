@@ -1,0 +1,28 @@
+AMARA DE SILVA
+Aspiring Data Analyst / Data Science Undergraduate
+
+EDUCATION
+BSc (Hons) in Data Science, University of Colombo — expected 2027
+
+TECHNICAL SKILLS
+Python (pandas, NumPy, scikit-learn), SQL, Power BI, Excel, Git, basic spaCy/NLP
+
+EXPERIENCE
+Data Analytics Intern — BrightHire Staffing (6 months)
+- Cleaned and merged candidate, job-posting, and placement datasets from three
+  internal systems using Python and pandas.
+- Built a Power BI dashboard tracking time-to-fill and source effectiveness for
+  the recruitment team, used weekly by 5 recruiters.
+- Wrote SQL queries to pull recruitment KPIs for monthly stakeholder reports.
+- Assisted in a small NLP project that used spaCy to pull skills and job titles
+  out of uploaded resumes into structured JSON.
+- Presented findings to non-technical HR staff in a monthly review meeting.
+
+University Project — Job Posting Trend Analysis
+- Analyzed 2 years of job posting data to identify seasonal hiring trends.
+- Built simple visualizations in Python (matplotlib/seaborn) to summarize
+  findings for a class presentation.
+
+OTHER
+- Comfortable working independently and documenting data pipelines.
+- Basic exposure to time-series forecasting (course project using Prophet).

@@ -1,0 +1,26 @@
+NADEESHA FERNANDO
+Marketing Executive seeking transition into Data Analytics
+
+EDUCATION
+BA in Marketing, University of Kelaniya — 2022
+Certificate: "Data Analytics Fundamentals" (online, 6 weeks, Excel-focused)
+
+TECHNICAL SKILLS
+Advanced Excel (pivot tables, VLOOKUP), basic knowledge of SQL (never used
+professionally), Canva, Google Analytics
+
+EXPERIENCE
+Marketing Executive — Coastal Living Retail (3 years)
+- Managed social media campaigns and tracked engagement metrics in Google
+  Analytics and Excel.
+- Prepared monthly marketing performance summaries in Excel for management.
+- No experience with Python, SQL in production, or building dashboards
+  such as Power BI/Tableau.
+- No experience with recruitment or HR data.
+
+OTHER
+- Currently completing a self-paced online course to learn Python basics
+  (in progress, not yet applied in any project).
+- Strong communication and presentation skills.
+- Motivated to move into a data-focused role but has no hands-on Python/SQL
+  project experience yet.

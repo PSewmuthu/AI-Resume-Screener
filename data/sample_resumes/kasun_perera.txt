@@ -1,0 +1,27 @@
+KASUN PERERA
+Junior Software Engineer
+
+EDUCATION
+BSc in Computer Science, SLIIT — 2025
+
+TECHNICAL SKILLS
+Python, Java, JavaScript, MySQL (basic), Git, REST APIs
+
+EXPERIENCE
+Junior Software Engineer — CodeNest Pvt Ltd (1 year)
+- Built and maintained backend REST APIs for an internal web application
+  using Python (Flask).
+- Wrote basic SQL queries for CRUD operations against a MySQL database.
+- Fixed bugs and added small features to an existing internal admin tool.
+- No prior exposure to dashboarding tools (Power BI/Tableau) or recruitment
+  data.
+
+University Project — Student Result Management System
+- Built a small web app with a MySQL backend to record and display student
+  grades. No data analysis or visualization component.
+
+OTHER
+- Completed a free 4-hour "Intro to Data Analysis with Python" online course
+  (pandas basics only, no real project).
+- Comfortable learning new tools quickly; interested in moving toward data
+  analytics roles.

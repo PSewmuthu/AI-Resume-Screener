@@ -1,0 +1,30 @@
+RUWAN JAYASURIYA
+Statistics Graduate / Reporting Analyst
+
+EDUCATION
+BSc (Hons) in Statistics, University of Peradeniya — 2024
+
+TECHNICAL SKILLS
+SQL (strong), Power BI (strong), Python (pandas — intermediate), Excel,
+basic forecasting (Prophet, statsmodels)
+
+EXPERIENCE
+Reporting Analyst — Skyline HR Consultancy (1.5 years)
+- Owned weekly and monthly Power BI dashboards for client hiring metrics
+  (applications received, time-to-fill, offer-acceptance rate).
+- Wrote complex SQL queries to join candidate, client, and placement tables
+  from a relational database.
+- Used Python and Prophet to build a simple forecast of expected monthly
+  placements for two clients.
+- Communicated dashboard insights directly to HR managers in client review
+  calls.
+- Limited exposure to NLP or resume-parsing tools; no direct experience
+  extracting structured data from unstructured resume text.
+
+University Project — Regional Unemployment Trend Study
+- Used statistical modeling (regression, basic time-series) to study
+  unemployment trends using government open data.
+
+OTHER
+- Comfortable documenting data pipelines and maintaining basic data quality
+  checks on recurring reports.

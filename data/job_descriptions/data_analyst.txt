@@ -1,0 +1,33 @@
+Job Title: Data Analyst — Recruitment Analytics Team
+Company: Horizon Talent Solutions (recruitment & HR technology)
+
+About the role:
+We are looking for a Data Analyst to join our Recruitment Analytics team.
+You will work with candidate, client, and job-posting data to build reports
+and dashboards that help our recruiters make faster, better-informed decisions.
+
+Responsibilities:
+- Clean, transform, and analyze structured recruitment datasets (candidate
+  profiles, job postings, placement outcomes) using Python and SQL.
+- Build and maintain dashboards (Power BI or similar) tracking key
+  recruitment metrics such as time-to-fill, source effectiveness, and
+  candidate pipeline health.
+- Work with the data science team to support forecasting and reporting
+  projects.
+- Communicate findings clearly to non-technical stakeholders such as
+  recruiters and HR managers.
+- Document data pipelines and maintain basic data quality checks.
+
+Requirements:
+- Bachelor's degree in Computer Science, Statistics, Data Science, or a
+  related field (or currently pursuing one).
+- Solid Python skills (pandas, basic OOP) and working SQL knowledge.
+- Experience building dashboards or reports (Power BI, Tableau, or similar).
+- Familiarity with basic statistics and data visualization best practices.
+- Strong communication skills; comfortable explaining data insights to
+  non-technical audiences.
+
+Nice to have:
+- Exposure to NLP or resume-parsing tools.
+- Experience with time-series forecasting (e.g. Prophet, SARIMAX).
+- Prior internship or project experience in the recruitment/HR domain.
