@@ -25,3 +25,9 @@ def parse_pdf(file_bytes: bytes) -> str:
             if page_text:
                 text_parts.append(page_text)
     return "\n".join(text_parts)
+
+
+def parse_docx(file_bytes: bytes) -> str:
+    """Extract text from a DOCX resume file."""
+    document = docx.Document(io.BytesIO(file_bytes))
+    return "\n".join(p.text for p in document.paragraphs if p.text.strip())
