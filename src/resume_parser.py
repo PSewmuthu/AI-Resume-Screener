@@ -31,3 +31,32 @@ def parse_docx(file_bytes: bytes) -> str:
     """Extract text from a DOCX resume file."""
     document = docx.Document(io.BytesIO(file_bytes))
     return "\n".join(p.text for p in document.paragraphs if p.text.strip())
+
+
+def parse_resume(filename: str, file_bytes: bytes) -> str:
+    """
+    Dispatch to the right extractor based on file extension.
+
+    Parameters
+    ----------
+    filename : str
+        Original filename, used only to detect the extension.
+    file_bytes : bytes
+        Raw file content.
+
+    Returns
+    -------
+    str
+        Plain text content of the resume.
+    """
+    suffix = Path(filename).suffix.lower()
+
+    if suffix == '.txt':
+        return parse_txt(file_bytes)
+    elif suffix == '.pdf':
+        return parse_pdf(file_bytes)
+    elif suffix == '.docx':
+        return parse_docx(file_bytes)
+    else:
+        raise ValueError(
+            f"Unsupported file type '{suffix}'. Please upload .txt, .pdf, or .docx files.")
